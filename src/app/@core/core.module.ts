@@ -13,6 +13,7 @@ import {
 } from "@nebular/auth";
 import { NbSecurityModule, NbRoleProvider } from "@nebular/security";
 import { of as observableOf } from "rxjs";
+import { HttpClientModule } from "@angular/common/http";
 import { throwIfAlreadyLoaded } from "./module-import-guard";
 import {
   AnalyticsService,
