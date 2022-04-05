@@ -46,12 +46,12 @@ export class ECommerceVisitorsStatisticsComponent implements AfterViewInit, OnDe
   setLegendItems(visitorsPieLegend) {
     this.chartLegend = [
       {
-        iconColor: visitorsPieLegend.firstSection,
-        title: 'New Visitors',
+        iconColor: 'red',
+        title: 'Failure',
       },
       {
         iconColor: visitorsPieLegend.secondSection,
-        title: 'Return Visitors',
+        title: 'Success',
       },
     ];
   }
@@ -176,16 +176,7 @@ export class ECommerceVisitorsStatisticsComponent implements AfterViewInit, OnDe
               },
               itemStyle: {
                 normal: {
-                  color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
-                    {
-                      offset: 0,
-                      color: visitorsPie.secondPieGradientLeft,
-                    },
-                    {
-                      offset: 1,
-                      color: visitorsPie.secondPieGradientRight,
-                    },
-                  ]),
+                  color: 'red',
                   shadowColor: visitorsPie.secondPieShadowColor,
                   shadowBlur: 0,
                   shadowOffsetX: visitorsPie.shadowOffsetX,

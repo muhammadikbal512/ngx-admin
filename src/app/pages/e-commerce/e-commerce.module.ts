@@ -55,6 +55,10 @@ import { EarningCardBackComponent } from './earning-card/back-side/earning-card-
 import { EarningPieChartComponent } from './earning-card/back-side/earning-pie-chart.component';
 import { EarningCardFrontComponent } from './earning-card/front-side/earning-card-front.component';
 import { EarningLiveUpdateChartComponent } from './earning-card/front-side/earning-live-update-chart.component';
+import { DashboardCardComponent } from './dashboard-card/dashboard-card.component';
+import { PerformanceStatsComponent } from './performance-stats/performance-stats.component';
+import { NbInputModule, NbTreeGridModule } from '@nebular/theme';
+
 
 @NgModule({
   imports: [
@@ -71,6 +75,8 @@ import { EarningLiveUpdateChartComponent } from './earning-card/front-side/earni
     NgxEchartsModule,
     NgxChartsModule,
     LeafletModule,
+    NbInputModule,
+    NbTreeGridModule
   ],
   declarations: [
     ECommerceComponent,
@@ -105,6 +111,8 @@ import { EarningLiveUpdateChartComponent } from './earning-card/front-side/earni
     EarningCardBackComponent,
     EarningPieChartComponent,
     EarningLiveUpdateChartComponent,
+    DashboardCardComponent,
+    PerformanceStatsComponent,
   ],
   providers: [
     CountryOrdersMapService,

@@ -2,19 +2,67 @@ import { NbMenuItem } from '@nebular/theme';
 
 export const MENU_ITEMS: NbMenuItem[] = [
   {
-    title: 'E-commerce',
-    icon: 'shopping-cart-outline',
+    title: 'Dashboard',
+    icon: 'home-outline',
     link: '/pages/dashboard',
     home: true,
   },
-  {
-    title: 'IoT Dashboard',
-    icon: 'home-outline',
-    link: '/pages/iot-dashboard',
-  },
+  // {
+  //   title: 'IoT Dashboard',
+  //   icon: 'home-outline',
+  //   link: '/pages/iot-dashboard',
+  // },
   {
     title: 'FEATURES',
     group: true,
+  },
+  {
+    title: 'Issuer',
+    icon: 'code',
+    children: [
+      {
+        title: 'Schema',
+        link: '/pages/issuer/schema'
+      },
+      {
+        title: 'Sandbox',
+        link: '/pages/issuer/sandbox'
+      },
+      {
+        title: 'Rules',
+        link: '/pages/issuer/rules'
+      },
+      {
+        title: 'Card Repository',
+        link: '/pages/issuer/card-repository'
+      },
+      {
+        title: 'Response Builder',
+        link: '/pages/issuer/response-builder'
+      },
+    ]
+  },
+  {
+    title: 'Acquirer',
+    icon: 'options-outline',
+    children: [
+      {
+        title: 'Object Repository',
+        link: '/pages/acquirer/object-repository'
+      },
+      {
+        title: 'Data',
+        link: '/pages/acquirer/data'
+      },
+      {
+        title: 'Script',
+        link: '/pages/acquirer/script'
+      },
+      {
+        title: 'Suite',
+        link: '/pages/acquirer/suite'
+      }
+    ]
   },
   {
     title: 'Layout',
