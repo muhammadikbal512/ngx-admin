@@ -21,6 +21,9 @@ import { CardRepositoryComponent } from "./card-repository/card-repository.compo
 import { ResponseBuilderComponent } from "./response-builder/response-builder.component";
 import { SchemaTableComponent } from "./schema/widgets/schema-table/schema-table.component";
 import { SchemaCreateComponent } from './schema/widgets/schema-create/schema-create.component';
+import { SchemaEditComponent } from './schema/widgets/schema-edit/schema-edit.component';
+import { SchemaCreateTableComponent } from './schema/widgets/schema-create/schema-create-table/schema-create-table.component';
+import { SchemaDeleteComponent } from './schema/widgets/schema-delete/schema-delete.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +35,9 @@ import { SchemaCreateComponent } from './schema/widgets/schema-create/schema-cre
     IssuerComponent,
     SchemaTableComponent,
     SchemaCreateComponent,
+    SchemaEditComponent,
+    SchemaCreateTableComponent,
+    SchemaDeleteComponent,
   ],
   imports: [
     CommonModule,

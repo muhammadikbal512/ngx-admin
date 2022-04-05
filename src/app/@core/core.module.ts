@@ -13,7 +13,6 @@ import {
 } from "@nebular/auth";
 import { NbSecurityModule, NbRoleProvider } from "@nebular/security";
 import { of as observableOf } from "rxjs";
-import { HttpClientModule } from "@angular/common/http";
 import { throwIfAlreadyLoaded } from "./module-import-guard";
 import {
   AnalyticsService,
@@ -122,7 +121,6 @@ export const NB_CORE_PROVIDERS = [
     strategies: [
       NbPasswordAuthStrategy.setup({
         name: "email",
-
         baseEndpoint: "",
         login: {
           method: "post",
@@ -136,7 +134,10 @@ export const NB_CORE_PROVIDERS = [
     ],
     forms: {
       login: {
-        socialLinks: socialLinks,
+        redirectDelay: 0,
+        showMessages: {
+          success: true,
+        }
       },
       register: {
         socialLinks: socialLinks,

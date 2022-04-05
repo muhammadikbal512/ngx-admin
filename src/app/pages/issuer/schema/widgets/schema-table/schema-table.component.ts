@@ -1,5 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { NbSortDirection, NbSortRequest, NbTreeGridDataSource, NbTreeGridDataSourceBuilder } from '@nebular/theme';
+import { NbDialogService } from '@nebular/theme';
+
 
 interface TreeNode<T> {
   data: T;
@@ -30,8 +32,12 @@ export class SchemaTableComponent {
   sortColumn: string;
   sortDirection: NbSortDirection = NbSortDirection.NONE;
 
-  constructor(private dataSourceBuilder: NbTreeGridDataSourceBuilder<FSEntry>) {
+  constructor(private dataSourceBuilder: NbTreeGridDataSourceBuilder<FSEntry>, private dialogService: NbDialogService) {
     this.dataSource = this.dataSourceBuilder.create(this.data);
+  }
+
+  open() {
+    
   }
 
   updateSort(sortRequest: NbSortRequest): void {

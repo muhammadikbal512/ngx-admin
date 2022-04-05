@@ -20,7 +20,7 @@ import {
   NbToastrModule,
   NbWindowModule,
 } from '@nebular/theme';
-import { NbPasswordAuthStrategy, NbAuthModule } from '@nebular/auth';
+// import { NbPasswordAuthStrategy, NbAuthModule } from '@nebular/auth';
 
 @NgModule({
   declarations: [AppComponent],
@@ -40,8 +40,7 @@ import { NbPasswordAuthStrategy, NbAuthModule } from '@nebular/auth';
     }),
     CoreModule.forRoot(),
     ThemeModule.forRoot(),
-    NbPasswordAuthStrategy,
-    NbAuthModule
+    NbDialogModule.forRoot(),
   ],
   bootstrap: [AppComponent],
 })
