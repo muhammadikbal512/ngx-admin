@@ -1,0 +1,16 @@
+<nb-card>
+    <nb-card-header>
+        <p>New Card</p>
+    </nb-card-header>
+    <nb-card-body>
+        <nb-tabset>
+            <nb-tab tabTitle="General Info">
+                <ngx-card-create-general></ngx-card-create-general>
+            </nb-tab>
+        </nb-tabset>
+        <div class="mx-auto">
+            <button class="btn btn-primary">Create</button>
+            <button (click)="backClicked()" class="btn btn-danger ml-3">Close</button>
+        </div>
+    </nb-card-body>
+</nb-card>

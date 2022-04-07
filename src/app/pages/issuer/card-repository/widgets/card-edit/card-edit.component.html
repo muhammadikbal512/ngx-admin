@@ -1,0 +1,16 @@
+<nb-card>
+    <nb-card-header>
+        <p>Edit Card</p>
+    </nb-card-header>
+    <nb-card-body>
+        <nb-tabset>
+            <nb-tab tabTitle="General Info">
+                <ngx-card-edit-general></ngx-card-edit-general>
+            </nb-tab>
+        </nb-tabset>
+        <div class="mx-auto">
+            <button class="btn btn-primary">Save</button>
+            <button (click)="backClicked()" class="btn btn-danger ml-3">Close</button>
+        </div>
+    </nb-card-body>
+</nb-card>
