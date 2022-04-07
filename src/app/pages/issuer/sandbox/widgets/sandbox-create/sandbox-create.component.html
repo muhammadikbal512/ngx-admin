@@ -1,0 +1,25 @@
+<nb-card>
+    <nb-card-header>
+        <h3>New Sandbox</h3>
+    </nb-card-header>
+    <nb-card-body>
+        <nb-tabset fullWidth>
+            <nb-tab tabTitle="General Info">
+              <ngx-sandbox-general></ngx-sandbox-general>
+            </nb-tab>
+            <nb-tab tabTitle="Requests">
+              <ngx-sandbox-request></ngx-sandbox-request>
+            </nb-tab>
+            <nb-tab tabTitle="Advance Info">
+                <ngx-sandbox-advance></ngx-sandbox-advance>
+            </nb-tab>
+            <nb-tab tabTitle="Client Registration">
+                <ngx-sandbox-client></ngx-sandbox-client>
+            </nb-tab>
+           </nb-tabset>
+           <div class="mx-auto">
+               <button class="btn btn-primary">Create</button>
+               <button (click)="backClicked()" class="btn btn-danger ml-3">Close</button>
+           </div>
+    </nb-card-body>
+</nb-card>

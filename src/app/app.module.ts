@@ -21,6 +21,7 @@ import {
   NbToastrModule,
   NbWindowModule,
 } from '@nebular/theme';
+
 // import { NbPasswordAuthStrategy, NbAuthModule } from '@nebular/auth';
 
 @NgModule({
@@ -43,7 +44,8 @@ import {
     ThemeModule.forRoot(),
     NbDialogModule.forRoot(),
     NbSidebarModule.forRoot(),
-    NbLayoutModule
+    NbLayoutModule,
+    
   ],
   bootstrap: [AppComponent],
 })

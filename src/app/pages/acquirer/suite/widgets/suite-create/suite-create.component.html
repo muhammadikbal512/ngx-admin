@@ -1,0 +1,59 @@
+<nb-card>
+    <nb-card-body>
+        <nb-tabset fullWidth>
+            <nb-tab tabTitle="General Info">
+                <form action="">
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="" class="label">Name</label>
+                            <input type="text" nbInput fullWidth placeholder="Suite Name">
+                        </div>
+                        <div class="col-2 d-flex flex-column">
+                            <label for="Agent Mode" class="label">Agent Mode</label>
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <div class="col-2 d-flex flex-column">
+                            <label for="" class="label">Testing Type</label>
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <div class="col-2 d-flex flex-column">
+                            <label for="" class="label">Execution Mode</label>
+                            <input type="checkbox" name="" id="">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-4">
+                            <label for="" class="label">Execution Type</label>
+                            <nb-select matRipple fullWidth selected="1">
+                                <nb-option matRipple value="1">Option 1</nb-option>
+                                <nb-option matRipple value="2">Option 2</nb-option>
+                              </nb-select>
+                        </div>
+                        <div class="col-4">
+                            <label for="" class="label">Environment</label>
+                            <nb-select matRipple fullWidth selected="1">
+                                <nb-option matRipple value="1">Option 1</nb-option>
+                                <nb-option matRipple value="2">Option 2</nb-option>
+                              </nb-select>
+                        </div>
+                        <div class="col-4">
+                            <label for="" class="label">Agent</label>
+                            <nb-select matRipple fullWidth selected="1">
+                                <nb-option matRipple value="1">Option 1</nb-option>
+                                <nb-option matRipple value="2">Option 2</nb-option>
+                              </nb-select>
+                        </div>
+                    </div>
+                </form>
+            </nb-tab>
+            <nb-tab tabTitle="Email Notification">
+                <div class="d-flex flex-column">
+                    <label for="" class="label">Email Notification</label>
+                    <input type="checkbox" name="" id="">
+                </div>
+            </nb-tab>
+            <button class="btn btn-primary">Create</button>
+            <button (click)="backClicked()" class="btn-danger">Cancel</button>
+        </nb-tabset>
+    </nb-card-body>
+</nb-card>
